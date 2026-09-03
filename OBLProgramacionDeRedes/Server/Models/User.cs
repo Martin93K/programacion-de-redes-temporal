@@ -1,4 +1,4 @@
-namespace Servidor.Modelos;
+namespace Servidor.Models;
 
 public class User
 {

@@ -1,4 +1,4 @@
-namespace Servidor.Servicios;
+namespace Servidor.Services;
 
 public class UserService
 {
