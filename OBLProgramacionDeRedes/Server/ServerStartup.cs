@@ -9,7 +9,6 @@ class ServerStartup
 {
     private const int Port = 10000; // TODO: Decidir puerto para la especificación
     private const int MaxClients = 50;
-    private static bool ServerActive { get; set; } = true;
 
     static void Main(string[] args)
     {
@@ -28,7 +27,7 @@ class ServerStartup
         } while (!string.Equals(Console.ReadLine(), "exit",
                      StringComparison.OrdinalIgnoreCase));
 
-        ServerActive = false;
+        GlobalState.ServerActive = false;
         socket.Close();
         Console.WriteLine("Server has been stopped.");
     }
